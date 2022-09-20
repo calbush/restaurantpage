@@ -1,0 +1,16 @@
+* {
+    outline-style: dotted;
+}
+
+
+#tabs {
+    display: flex;
+    background-color: red;
+    justify-content: space-evenly;
+}
+
+#tabs > * {
+    font-size: 24px;
+    flex: 1;
+    text-align: center;
+}
