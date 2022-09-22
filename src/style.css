@@ -1,11 +1,27 @@
+@font-face {
+    font-family: 'Comico';
+    src: url('./Comico.ttf');
+}
+
+body {
+    background: repeating-linear-gradient(
+        90deg,
+        red,
+        red 50px,
+        white 50px,
+        white 100px
+    )
+}
+
 * {
+    font-family: 'Comico';
     outline-style: dotted;
 }
 
 
 #tabs {
     display: flex;
-    background-color: red;
+    background-color: gray;
     justify-content: space-evenly;
 }
 
@@ -13,4 +29,59 @@
     font-size: 24px;
     flex: 1;
     text-align: center;
+}
+
+#middleSection {
+    height: auto;
+    width: auto;
+    padding: 24px;
+    display: flex; 
+}
+
+#beefImage {
+    height: auto;
+    width: 50%;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 4px;
+    color: #414141;
+}
+
+#blurb {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 50px 12px;
+    gap: 12px;
+}
+
+#mainHeader {
+    width: auto;
+}
+
+#restaurantNameHeader {
+    font-size: 86px;
+    text-align: center;
+}
+
+#blurbTitle {
+    width: 150px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    background: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 4px;
+    color: #414141;
+}
+
+#blurbBody {
+    background: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 4px;
+    font-size: 20px;
+    line-height: 130%;
+    color: #414141;
 }
