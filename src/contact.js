@@ -5,7 +5,5 @@ export function createContactPage() {
         if (element.classList.contains('temp')){
             element.remove()
         }
-
-        
     }
 }
